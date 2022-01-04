@@ -24,9 +24,6 @@ def explr():
             result = i
             l.append(result)
     return l
-print(explr())
-
-# print(explr())
 # lst = []
 # lst.append(explr())
 # print(lst)
