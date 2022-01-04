@@ -1,36 +1,43 @@
-# # dat = i for i in range(5)
-#     i for i in range(5) if True
-# # list_A =      [i for i in range(5) if True]
+"""cách 1"""
 
-# l = ['even' if i % 2 == 0 else i for i in range(10)]
-# l = ['even' if i % 2 == 0 else i for i in range(10)]
-# l = 'even' if 5 % 2 != 0 else 3
-# l = ['even' if i%2 == 0 else i for i in range(20)]
-# lst = []
-# lst.append('even' if i%2 == 0 else i for i in range(20))
-# print(type(lst))
-# for i in lst:
-#     print(i)
-l = ['even' if i%2 == 0 else i for i in range(20)]
-print(l)
+list_a = []
+def expr(i):
+    return i*2
+def func(i):
+   #  toan tu 3 ngoi
+   # return True  if i % 2 ==0  else  False
+   #normal
+   if i%2==0:
+       return True
+   else:
+       return False
+# duyet for neu if dung thì tien hanh expr con sai thi thoi
+list_a = [expr(i) for i in range(5) if func(i)]
+#duyet for nếu if là đúng thì add i*2 còn ko thì add False
+list_a = [i * 2 if i % 2 == 0 else  False for i in range(5)]
+print(list_a)
+# print(list_a)
+"""cach normal"""
+# list_a = []
 
-def explr():
-    l = []
-    for i in range(20):
-        if i%2==0:
-            result = "even"
-            l.append(result)
-        else:
-            result = i
-            l.append(result)
-    return l
-# lst = []
-# lst.append(explr())
-# print(lst)
+# def expr(i):
+#      return i
+# for i in range(5):
+#     if i % 2 ==0 :
+#         list_a.append(expr(i))
+# print(list_a)
+"""cach 3 """
+# def expr(i):
+#     return i*2
+# def func(i):
+#     if i % 2 ==0 :
+#         return True
+# list_a = []
+# for i in range(5):
+#     if func(i):
+#         # list_a.append(expr(i))
+#         print(expr(i))
+#
+# print(list_a)
+""""""
 
-# print(l)
-# ['even', 1, 'even', 3, 'even', 5, 'even', 7, 'even', 9]
-
-# l = [i * 10 if i % 2 == 0 else i for i in range(10)]
-# print(l)
-# [0, 1, 20, 3, 40, 5, 60, 7, 80, 9]

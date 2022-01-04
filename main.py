@@ -250,31 +250,33 @@
 # str ="Dat nguyen QUoc"
 #
 # print("Dat" in str)
-
-list_a = [expr(i) for i in list_b if func(i)]
-
-list_a = [] for i in list_b: if func(i): list_a.append(i)
-for i in list_b: if func(i): list_a.append(expr(i))
-list_a = [] for i in list_b: if func(i): list_a.append(expr(i))
-list_a = [expr(i) for i in list_b if func(i)]
-print(list_a)
-
+# question
+# list_a = [expr(i) for i in list_b if func(i)]
+#
 # list_a = [] for i in list_b: if func(i): list_a.append(i)
-list_a = []
-if func(i):
-    for i in list_b:
-else:
-    list_a.append(((i)))
 # for i in list_b: if func(i): list_a.append(expr(i))
-if func(i):
-    for i in list_b:
-else:
-    list_a.append((expr(i)))
-
-#list_a = [] for i in list_b: if func(i): list_a.append(expr(i))
-list_a = []
-if func(i):
-    for i in list_b:
-else:
-    list_a.append((expr(i)))
+# #correct
+# list_a = [] for i in list_b: if func(i): list_a.append(expr(i))
+#
+# list_a = [expr(i) for i in list_b if func(i)]
+# print(list_a)
+#
+# # list_a = [] for i in list_b: if func(i): list_a.append(i)
+# list_a = []
+# if func(i):
+#     for i in list_b:
+# else:
+#     list_a.append(((i)))
+# # for i in list_b: if func(i): list_a.append(expr(i))
+# if func(i):
+#     for i in list_b:
+# else:
+#     list_a.append((expr(i)))
+#
+# #list_a = [] for i in list_b: if func(i): list_a.append(expr(i))
+# list_a = []
+# if func(i):
+#     for i in list_b:
+# else:
+#     list_a.append((expr(i)))
 # list_a = [expr(i) for i in list_b if func(i)]
